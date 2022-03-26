@@ -1,0 +1,55 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "template-curly-spacing" : "off",
+    "indent": ["error", 2, {
+      "ignoredNodes": ["TemplateLiteral"]
+    }],
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "object-curly-spacing": ["error", "always"],
+    "object-property-newline": ["error"],
+    "no-extra-parens": "error",
+    "no-multi-spaces": "error",
+    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "arrow-parens": ["error", "always"],
+    "arrow-spacing": "error",
+    "eol-last": ["error", "always"],
+    "comma-dangle": ["error", "never"],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["multiline-const", "multiline-let", "multiline-var"], "next": ["multiline-const", "multiline-let", "multiline-var"] },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": ["multiline-const", "multiline-let", "multiline-var"] },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "block-like" },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "return" },
+      { "blankLine": "always", "prev": "import", "next": ["const", "let", "var"] },
+      { "blankLine": "always", "prev": "block-like", "next": "return" },
+      { "blankLine": "always", "prev": "block-like", "next": "export" }
+    ],
+    "react/prop-types": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

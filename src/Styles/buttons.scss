@@ -1,0 +1,43 @@
+@import './colors.scss';
+
+.btn {
+  padding: 7px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: 1px solid $primary;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+
+.btn-success {
+  background-color: $success;
+  border: 1px solid $success;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    border: 1px solid $success;
+    color: $success;
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  border: 1px solid $danger;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    border: 1px solid $danger;
+    color: $danger;
+  }
+}
