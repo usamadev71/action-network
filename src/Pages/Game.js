@@ -76,8 +76,8 @@ const Game = ({
           </> :
           <h2>YOU WIN!</h2>
         }
-        <button onClick={goHome}>HOME</button>
-        <button onClick={restart}>NEW GAME</button>
+        <button className='btn btn-success' onClick={goHome}>HOME</button>
+        <button className='btn btn-primary mx1' onClick={restart}>NEW GAME</button>
       </Modal>
     </div>
   );

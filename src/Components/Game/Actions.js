@@ -16,7 +16,7 @@ const Actions = ({
   };
 
   const handleOdd = () => {
-    const next = Math.floor(Math.random() * 11/2) * 2 + 1;
+    const next = Math.floor(Math.random() * 10/2) * 2 + 1;
     setValues(next);
   };
 
